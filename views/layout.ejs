@@ -1,0 +1,33 @@
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>西村印刷株式会社_test_site</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/modify_style.css" />
+  <link
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900|Noto+Serif+JP:200,300,400,500,600,700,900&display=swap&subset=japanese" />
+ </head>
+
+<body>
+  <%- include("partials/navigation") %>
+      <%- body %>
+    <!-- フッターははずす -->
+  <!-- <%- include("partials/footer") %> -->
+
+  <!-- javascriptの呼び出しをここに記述しないと動かないという罠 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $('.bs-component [data-toggle="popover"]').popover();
+    $('.bs-component [data-toggle="tooltip"]').tooltip();
+  </script>
+
+</body>
+
+</html>

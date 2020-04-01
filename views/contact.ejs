@@ -1,0 +1,50 @@
+<div class="col-lg-6" style="margin-top: 20px; margin-left: auto; margin-right:auto;">
+  <div class="bs-component">
+    <form action="/contact" method="POST">
+      <fieldset>
+        <div class="form-group">
+          <div>
+            <label for="formInputName">【お名前】</label>
+            <input type="name"" class="form-control" id="inputName" aria-describedby="namelHelp"
+              placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="inputEmail1">【メールアドレス】</label>
+            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+            placeholder="example@sendmail.com">
+            <small id="emailHelp" class="form-text text-muted">ここで入力したメールアドレスは公開されません</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="select">【宛先（複数名の選択可）】</label>
+            <select multiple class="form-control" id="select">
+              <option>西村</option>
+              <option>大槻</option>
+              <option>福本</option>
+              <option>渡辺</option>
+              <option>西村</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="exampleTextarea">【お問い合わせ内容】</label>
+            <textarea class="form-control" id="exampleTextarea" rows="15"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="exampleInputFile">【添付ファイル】</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">送信</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

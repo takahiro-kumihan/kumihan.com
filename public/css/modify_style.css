@@ -1,0 +1,30 @@
+.jumbotron-extend {
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+  /* background: url(/images/index_bg.jpg) no-repeat top; */
+  /* background-size: 95%; */
+  background: url(/images/index_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.jumbotron-extend-error {
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+  background: url(/images/error_image.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.card-header-font-style {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+#company_map_size {
+  width: auto;
+  height: 400px;
+  /* width: 700px;
+  height: 400px; */
+}

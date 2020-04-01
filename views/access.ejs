@@ -1,0 +1,32 @@
+<div class="col-lg-6" style="margin-top: 20px; margin-left: auto; margin-right:auto;">
+
+<div class="card border-primary mb-3" style="width: auto;">
+  <div class="card-header card-header-font-style">Access</div>
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center; font-size: 1.1rem;">
+      〒534-0021</br>
+      大阪市都島区都島本通5丁目15-3
+    </h5>
+    <h3 class="card-title" style="text-align: center;">
+      <a href="tel:0669256555">TEL 06-6925-6555</a> 
+    </h3>
+  </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%=googleMapApiKey%>"></script>
+<script>
+var map;
+// lat: 緯度, lng: 経度, zoom: 地図のズームを指定
+function initMap() {
+  map = new google.maps.Map(document.getElementById('company_map_size'), {
+    center: { lat: 34.707899, 
+              lng: 135.535019 
+            },
+    zoom: 19
+  });
+}
+</script>
+<div id="company_map_size"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=<%=googleMapApiKey%>&callback=initMap"></script>
+
+</div>

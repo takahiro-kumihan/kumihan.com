@@ -1,0 +1,22 @@
+{
+  "name": "express_templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "_+++++++++++ comment +++++++++++": "npm startスクリプトを追加",
+    "start": "node main.js"
+  },
+  "author": "Nobuyuki Takahiro",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^1.1.0",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "http-status-codes": "^1.4.0"
+  }
+}
