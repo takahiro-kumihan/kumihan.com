@@ -1,0 +1,8 @@
+<h3>申し込みリスト</h3>
+<ul>
+  <% Users.forEach(u => { %>
+    <li> <%= u.name %> </li>
+    <li> <%= u.email %> </li>
+    <li> <%= u.c_code %> </li>
+  <% }) %>
+</ul>
