@@ -3,6 +3,7 @@
 const express = require("express"),
   app = express(),
   homeContoller = require("./controllers/homeController"),
+  usersCtl = require("./controllers/usersCtl"),
   errorController = require("./controllers/errorController"),
   layouts = require("express-ejs-layouts");
 
@@ -16,7 +17,7 @@ app.use(
   })
   );
 app.use(express.json());
-  
+
 ////////////////////////////////////////////////////// 質問200314
 
 // パスの経路よりも先にassetsを読み込ませてみる。
@@ -51,9 +52,14 @@ app.get("/", (req, res) => {
 app.get("/about", homeContoller.showAbout);
 app.get("/access", homeContoller.showAccess);
 app.get("/works", homeContoller.showWorks);
-app.get("/contact", homeContoller.getSignUpForm);
-app.get("/trafic_data", homeContoller.getDataForm);
 
+app.get("/user_post", usersCtl.postUser);
+app.post("/user_save", usersCtl.saveUser);
+app.get("/user_gets",
+         usersCtl.getsUser, (req, res) => {
+           res.render("user_gets", { Users: req.data });
+         });
+app.get("/trafic_data", homeContoller.getDataForm);
 app.get("/bootstrap_sample", homeContoller.showBootstrap);
 
 // エラー処理

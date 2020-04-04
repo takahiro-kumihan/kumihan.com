@@ -1,0 +1,33 @@
+<div class="col-lg-6" style="margin-top: 20px; margin-left: auto; margin-right:auto;">
+  <div class="bs-component">
+    <form action="/user_save" method="POST">
+      <fieldset>
+        <div class="form-group">
+          <div>
+            <label for="formInputName">【お名前】</label>
+            <input type="name" class="form-control" id="name" aria-describedby="namelHelp"
+              placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="inputEmail1">【メールアドレス】</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+            placeholder="example@sendmail.com">
+            <small id="emailHelp" class="form-text text-muted">ここで入力したメールアドレスは公開されません</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="formInputName">【コース番号】</label>
+            <input type="c_code" class="form-control" id="c_code" aria-describedby="namelHelp"
+              placeholder="ご希望のコース番号">
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">送信</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
