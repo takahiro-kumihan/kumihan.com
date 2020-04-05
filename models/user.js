@@ -9,10 +9,8 @@ const userSchema = new Schema({
               required: true,
               lowercase: true,
               unique: true },
-  c_code:   { type: String,
-              required: true },
-  // c_code:   { type: Number,
-  //             min: 100, max: 999 },
+  c_code:   { type: Number,
+              min: 100, max: 999 },
   courses: [{ type: mongoose.Schema.Types.ObjectId,
               ref: "Course" }]
 });
