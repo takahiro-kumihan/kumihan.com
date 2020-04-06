@@ -4,6 +4,7 @@ const express = require("express"),
   app = express(),
   homeContoller = require("./controllers/homeController"),
   usersCtl = require("./controllers/usersCtl"),
+  membersCtl = require("./controllers/membersCtl"),
   errorController = require("./controllers/errorController"),
   layouts = require("express-ejs-layouts");
 
@@ -59,6 +60,8 @@ app.get("/user_gets",
          usersCtl.getsUser, (req, res) => {
            res.render("user_gets", { Users: req.data });
          });
+
+app.get("/members", membersCtl.index);
 app.get("/trafic_data", homeContoller.getDataForm);
 app.get("/bootstrap_sample", homeContoller.showBootstrap);
 

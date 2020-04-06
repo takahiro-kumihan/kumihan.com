@@ -1,0 +1,17 @@
+<h2>Member Table</h2>
+<table>
+  <thead>
+    <tr>
+      <th>氏名</th>
+      <th>メールアドレス</th>
+      <th>コース番号</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% members.forEach(m => { %>
+    <%= m.fullName %>
+    <%= m.email %>
+    <%= m.c_code %>
+    <% }); %>
+  </tbody>
+</table>
